@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row ">
+        <div class="col">
+            <div class="card mt-4" style="width: 18rem;" *ngFor="let song of songs" >
+                <button type="button" class="list-group-item list-group-item-action text-center" (click)="changeSong(song.songUrl)">
+                    <span><img src="{{song.image}}" class="card-img-top" alt="..."></span>
+                    <span>{{song.author}} - {{song.title}}</span>
+                </button>
+               
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mt-4" style="width: 18rem;">
+                <div class="card-body" >
+                    <img src="/assets/images/1.jpg" class="card-img-top" alt="">
+                    <div class="card" >
+                        <audio id="bictiaMusic" src="/assets/musica/Hysteria.mp3" controls style="width: 16rem;"></audio>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
